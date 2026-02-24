@@ -1,0 +1,63 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #DC2626;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #B91C1C;
+}
+
+/* Button hover effects */
+button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Card hover effects */
+.group {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image overlay animations */
+img {
+    transition: transform 0.5s ease;
+}
+
+/* Link hover effects */
+a {
+    transition: color 0.2s ease;
+}
+
+/* Focus states for accessibility */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #DC2626;
+    outline-offset: 2px;
+}
+
+/* Prevent text overflow */
+.container {
+    overflow-wrap: break-word;
+}
